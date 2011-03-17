@@ -4,16 +4,13 @@
 
 EAPI="2"
 
-inherit eutils flag-o-matic wxwidgets
+inherit autotools git eutils flag-o-matic wxwidgets
 
 MY_P=${PN/m/M}-${PV}
 S="${WORKDIR}"/${MY_P}
 
 DESCRIPTION="aMule, the all-platform eMule p2p client"
 HOMEPAGE="http://www.amule.org/"
-SRC_URI="mirror://sourceforge/${PN}/${MY_P}.tar.bz2 "
-
-inherit autotools git
 EGIT_REPO_URI="http://repo.or.cz/r/amule.git"
 SRC_URI=""
 

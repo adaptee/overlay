@@ -96,6 +96,7 @@ src_configure() {
 			$(use_enable cover artwork)
 			$(use_enable lastfm lfm)"
 	fi
+	./autogen.sh
 	econf ${my_config} || die
 }
 

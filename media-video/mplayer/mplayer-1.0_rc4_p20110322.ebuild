@@ -39,9 +39,9 @@ FONT_URI="
 if [[ ${PV} == *9999* ]]; then
 	RELEASE_URI=""
 else
-	RELEASE_URI="ftp://ftp.archlinux.org/other/mplayer/${P}.tar.xz"
+	RELEASE_URI="http://dev.gentoo.org/~scarabeus/${P}.tar.xz
+		mirror://gentoo/${P}.tar.xz"
 fi
-
 SRC_URI="${RELEASE_URI}
 	!truetype? ( ${FONT_URI} )"
 

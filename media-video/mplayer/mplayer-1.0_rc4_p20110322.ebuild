@@ -195,7 +195,8 @@ fi
 # xvmc requires xvideo support
 REQUIRED_USE="bindist? ( !amr !faac !win32codecs )"
 
-PATCHES=("title-utf8.patch"
+PATCHES=(
+	"${FILESDIR}/title-utf8.patch"
 )
 
 pkg_setup() {

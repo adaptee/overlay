@@ -1,4 +1,4 @@
-# Copyright 2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -16,7 +16,7 @@ LICENSE="GPL-2 ZLIB
 	shorten? ( shorten )
 	audiooverload? ( BSD XMAME )"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 IUSE="+gtk gtk3 +alsa ffmpeg pulseaudio mp3 +vorbis +flac wavpack sndfile cdda +hotkeys
 	oss lastfm adplug +ape sid nullout +supereq vtx gme dumb +notify cover curl
 	shellexec musepack +tta dts aac midi mms shorten audiooverload nls rpath threads static"

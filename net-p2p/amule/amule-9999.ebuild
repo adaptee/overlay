@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -14,10 +14,10 @@ HOMEPAGE="http://www.amule.org/"
 EGIT_REPO_URI="http://repo.or.cz/r/amule.git"
 SRC_URI=""
 
-
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
+#KEYWORDS="~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS=""
 IUSE="daemon debug geoip gtk nls remote stats unicode upnp "
 
 DEPEND="=x11-libs/wxGTK-2.8*
@@ -28,6 +28,8 @@ DEPEND="=x11-libs/wxGTK-2.8*
 	upnp? ( >=net-libs/libupnp-1.6.6 )
 	remote? ( >=media-libs/libpng-1.2.0
 	unicode? ( >=media-libs/gd-2.0.26 ) )"
+
+RDEPEND="$DEPEND"
 
 pkg_setup() {
 	if ! use gtk && ! use remote && ! use daemon; then

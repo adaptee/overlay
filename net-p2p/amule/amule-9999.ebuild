@@ -2,17 +2,16 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="2"
+EAPI="4"
 
-inherit autotools git eutils flag-o-matic wxwidgets
+inherit git-2 autotools eutils flag-o-matic wxwidgets
 
-MY_P=${PN/m/M}-${PV}
-S="${WORKDIR}"/${MY_P}
+MY_P=${PN}-${PV}
+S="${WORKDIR}/${MY_P}"
 
 DESCRIPTION="aMule, the all-platform eMule p2p client"
 HOMEPAGE="http://www.amule.org/"
-EGIT_REPO_URI="http://repo.or.cz/r/amule.git"
-SRC_URI=""
+EGIT_REPO_URI="git://github.com/adaptee/amule.git"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -30,6 +29,7 @@ DEPEND="=x11-libs/wxGTK-2.8*
 	unicode? ( >=media-libs/gd-2.0.26 ) )"
 
 RDEPEND="$DEPEND"
+
 
 pkg_setup() {
 	if ! use gtk && ! use remote && ! use daemon; then
@@ -55,6 +55,11 @@ pkg_preinst() {
 }
 
 src_configure() {
+
+	epatch "${FILESDIR}/automake-version.patch"
+
+	./autogen.sh
+
 	local myconf
 
 	WX_GTK_VER="2.8"

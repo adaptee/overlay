@@ -6,7 +6,7 @@ EAPI=3
 PYTHON_DEPEND="2:2.6 3:3.1"
 PYTHON_USE_WITH="ncurses"
 
-inherit distutils git
+inherit distutils git-2
 
 DESCRIPTION="A vim-inspired file manager for the console"
 HOMEPAGE="http://ranger.nongnu.org/"

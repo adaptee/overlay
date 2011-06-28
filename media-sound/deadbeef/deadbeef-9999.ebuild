@@ -4,7 +4,7 @@
 
 EAPI="2"
 
-inherit fdo-mime git
+inherit fdo-mime git-2
 
 DESCRIPTION="foobar2k-like music player"
 HOMEPAGE="http://deadbeef.sourceforge.net/"

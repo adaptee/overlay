@@ -11,7 +11,7 @@ S="${WORKDIR}/${MY_P}"
 
 DESCRIPTION="aMule, the all-platform eMule p2p client"
 HOMEPAGE="http://www.amule.org/"
-EGIT_REPO_URI="git://github.com/adaptee/amule.git"
+EGIT_REPO_URI="git://github.com/adaptee/amule"
 
 LICENSE="GPL-2"
 SLOT="0"

@@ -3,14 +3,14 @@
 # $Header: /var/cvsroot/gentoo-x86/app-misc/ranger/ranger-1.4.2.ebuild,v 1.1 2011/03/14 21:14:46 radhermit Exp $
 
 EAPI=3
-PYTHON_DEPEND="2:2.6 3:3.1"
+PYTHON_DEPEND="2:2.7 3:3.2"
 PYTHON_USE_WITH="ncurses"
 
-inherit distutils git-2
+inherit git-2 distutils
 
 DESCRIPTION="A vim-inspired file manager for the console"
 HOMEPAGE="http://ranger.nongnu.org/"
-EGIT_REPO_URI="git://git.sv.gnu.org/ranger.git"
+EGIT_REPO_URI="git://git.sv.gnu.org/ranger"
 SRC_URI=""
 
 LICENSE="GPL-3"

@@ -88,7 +88,6 @@ src_configure() {
 
 	econf \
 		--with-wx-config=${WX_CONFIG} \
-		--with-wxbase-config=${WX_CONFIG} \
 		--enable-amulecmd \
 		$(use_enable debug) \
 		$(use_enable !debug optimize) \

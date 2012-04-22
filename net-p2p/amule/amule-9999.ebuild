@@ -17,9 +17,9 @@ LICENSE="GPL-2"
 SLOT="0"
 #KEYWORDS="~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
 KEYWORDS=""
-IUSE="daemon debug geoip gtk nls remote stats unicode upnp "
+IUSE="daemon debug geoip gtk nls remote web stats unicode upnp "
 
-DEPEND="=x11-libs/wxGTK-2.8*
+DEPEND="=x11-libs/wxGTK-2.9*
 	>=dev-libs/crypto++-5
 	>=sys-libs/zlib-1.2.1
 	stats? ( >=media-libs/gd-2.0.26[jpeg] )
@@ -62,7 +62,7 @@ src_configure() {
 
 	local myconf
 
-	WX_GTK_VER="2.8"
+	WX_GTK_VER="2.9"
 
 	if use gtk; then
 		einfo "wxGTK with gtk support will be used"
@@ -94,7 +94,7 @@ src_configure() {
 		$(use_enable daemon amule-daemon) \
 		$(use_enable geoip) \
 		$(use_enable nls) \
-		$(use_enable remote webserver) \
+		$(use_enable web webserver) \
 		$(use_enable stats cas) \
 		$(use_enable stats alcc) \
 		${myconf} || die

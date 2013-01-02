@@ -18,4 +18,3 @@ IUSE=""
 RDEPEND=">=app-i18n/fcitx-9999
 	kde-base/systemsettings"
 DEPEND="${RDEPEND}"
-

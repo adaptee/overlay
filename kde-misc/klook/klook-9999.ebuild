@@ -6,7 +6,7 @@ EAPI=5
 
 inherit kde4-base
 
-DESCRIPTION="KDE's screen management software"
+DESCRIPTION="A quick file content preview application"
 HOMEPAGE="http://projects.kde.org/klook"
 KEYWORDS=""
 SLOT="4"

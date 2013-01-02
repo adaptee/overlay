@@ -12,7 +12,7 @@ SLOT="4"
 IUSE="debug"
 
 COMMONDEPEND="
-	
+	x11-libs/libXrandr
 	>=dev-libs/qjson-0.8
 "
 

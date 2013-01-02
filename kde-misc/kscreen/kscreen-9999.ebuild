@@ -13,7 +13,7 @@ SLOT="4"
 IUSE="debug"
 
 COMMONDEPEND="
-	x11-libs/libXrandr
+	=kde-misc/libkscreen-9999
 	>=dev-libs/qjson-0.8
 "
 

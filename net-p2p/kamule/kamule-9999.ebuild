@@ -15,5 +15,5 @@ SLOT="4"
 IUSE="debug"
 
 RDEPEND="
-	nep-p2p/amule
+	net-p2p/amule
 "

@@ -11,7 +11,7 @@ HOMEPAGE="https://projects.kde.org/libkscreen"
 LICENSE="GPL-2+"
 
 KEYWORDS=""
-IUSE="debug"
+IUSE="debug doc"
 SLOT="4"
 
 COMMONRDEPEND="
@@ -24,4 +24,14 @@ RDEPEND="${COMMONRDEPEND}"
 
 DEPEND="${COMMONRDEPEND}
 	kde-base/kdelibs
+	doc? ( app-doc/doxygen )
 "
+
+src_configure() {
+
+	mycmakeargs=(
+		$(cmake-utils_use_with doc LIBKSCREEN_BUILD_API_DOCS)
+	)
+
+	cmake-utils_src_configure
+}

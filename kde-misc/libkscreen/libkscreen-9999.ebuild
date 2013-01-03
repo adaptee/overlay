@@ -7,15 +7,21 @@ EAPI=5
 inherit kde4-base
 
 DESCRIPTION="KScreen"
-KEYWORDS=""
-SLOT="4"
-IUSE="debug"
+HOMEPAGE="https://projects.kde.org/libkscreen"
+LICENSE="GPL-2+"
 
-COMMONDEPEND="
-	x11-libs/libXrandr
+KEYWORDS=""
+IUSE="debug"
+SLOT="4"
+
+COMMONRDEPEND="
 	>=dev-libs/qjson-0.8
+	x11-libs/libXrandr
+	x11-libs/qt-gui
 "
 
-DEPEND="${COMMONDEPEND}"
+RDEPEND="${COMMONRDEPEND}"
 
-RDEPEND="${COMMONDEPEND}"
+DEPEND="${COMMONRDEPEND}
+	kde-base/kdelibs
+"

@@ -6,7 +6,7 @@ EAPI=5
 
 inherit kde4-base
 
-DESCRIPTION="KScreen"
+DESCRIPTION="KDE's screen management software (the libarry)"
 HOMEPAGE="https://projects.kde.org/libkscreen"
 LICENSE="GPL-2+"
 

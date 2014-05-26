@@ -8,7 +8,8 @@ inherit fdo-mime git-2
 
 DESCRIPTION="foobar2k-like music player"
 HOMEPAGE="http://deadbeef.sourceforge.net/"
-EGIT_REPO_URI="git://deadbeef.git.sourceforge.net/gitroot/deadbeef/deadbeef/"
+#EGIT_REPO_URI="git://deadbeef.git.sourceforge.net/gitroot/deadbeef/deadbeef/"
+EGIT_REPO_URI="https://github.com/Alexey-Yakovenko/deadbeef.git"
 SRC_URI=""
 
 LICENSE="GPL-2 ZLIB

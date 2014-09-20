@@ -16,5 +16,5 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=app-i18n/fcitx-9999
-	kde-base/systemsettings"
+	=kde-base/systemsettings-4.11.49.9999"
 DEPEND="${RDEPEND}"

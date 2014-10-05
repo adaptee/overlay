@@ -5,7 +5,7 @@
 EAPI=4
 
 VIRTUALX_REQUIRED="test"
-inherit kde4-base
+inherit kde4-base git-r3
 
 DESCRIPTION="Todo management application for KDE"
 HOMEPAGE="http://zanshin.kde.org/"
